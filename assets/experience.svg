@@ -1,77 +1,65 @@
-<svg width="640" height="428" viewBox="0 0 640 428" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="460" viewBox="0 0 1000 460" xmlns="http://www.w3.org/2000/svg" role="img">
   <style>
-    .bg { fill: #0A0A0A; }
-    .border {
-      fill: none; stroke: #2A2A2A; stroke-width: 1.5;
-      animation: glow 3.5s ease-in-out infinite;
-    }
-    @keyframes glow {
-      0%, 100% { stroke: #2A2A2A; }
-      50% { stroke: #5A5A5A; }
-    }
-    .path { fill: #777777; font-family: 'Courier New', monospace; font-size: 13px; }
-    .date { fill: #666666; font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 1.2px; }
-    .org  { fill: #FFFFFF; font-family: 'Courier New', monospace; font-size: 14px; font-weight: bold; }
-    .role { fill: #9A9A9A; font-family: 'Courier New', monospace; font-size: 13px; }
-    .note { fill: #5E5E5E; font-family: 'Courier New', monospace; font-size: 11.5px; }
-    .rail { stroke: #242424; stroke-width: 1.5; }
-    .dot  { fill: #0A0A0A; stroke: #FFFFFF; stroke-width: 1.6; }
-    .row { opacity: 1; animation: reveal 0.5s ease backwards; }
-    .e1 { animation-delay: 0.25s; }
-    .e2 { animation-delay: 0.80s; }
-    .e3 { animation-delay: 1.35s; }
-    .e4 { animation-delay: 1.90s; }
-    @keyframes reveal {
-      from { opacity: 0; transform: translateX(-8px); }
-      to   { opacity: 1; transform: translateX(0); }
-    }
-    .live { fill: #FFFFFF; animation: beat 1.8s ease-in-out infinite; }
-    @keyframes beat {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.2; }
-    }
+    .edge { animation: edge 7s ease-in-out infinite; }
+    @keyframes edge { 0%,100% { opacity: .35; } 50% { opacity: .85; } }
+    .rise { opacity: 1; animation: rise .5s steps(6,end) backwards; }
+    @keyframes rise { from { opacity: 0; transform: translateY(6px); }
+                       to   { opacity: 1; transform: translateY(0); } }
+    .slide { opacity: 1; animation: slide .45s steps(6,end) backwards; }
+    @keyframes slide { from { opacity: 0; transform: translateX(-10px); }
+                        to   { opacity: 1; transform: translateX(0); } }
+    .type { opacity: 1; animation: type .3s steps(2,end) backwards; }
+    @keyframes type { from { opacity: 0; } to { opacity: 1; } }
+    .pop { opacity: 1; animation: pop .5s cubic-bezier(.2,.9,.3,1.1) backwards; }
+    @keyframes pop { from { opacity: 0; transform: scale(.8); }
+                      to   { opacity: 1; transform: scale(1); } }
+    text { font-family: 'Courier New', ui-monospace, monospace; }
   </style>
-
-  <rect class="bg" width="640" height="428" rx="12"/>
-  <rect class="border" x="1.5" y="1.5" width="637" height="425" rx="12"/>
-
-  <text x="28" y="38" class="path">/usr/bin/akshat/experience --current</text>
-  <line x1="28" y1="52" x2="612" y2="52" stroke="#222222" stroke-width="1"/>
-
-  <line class="rail" x1="40" y1="78" x2="40" y2="354"/>
-
-  <g class="row e1">
-    <circle class="dot" cx="40" cy="82" r="5"/>
-    <circle class="live" cx="40" cy="82" r="2"/>
-    <text x="66" y="86"  class="date">OCT 2026 &#8212; PRESENT</text>
-    <text x="66" y="106" class="org">Mercatus Center, George Mason University</text>
-    <text x="66" y="124" class="role">Emergent Ventures Grantee</text>
-    <text x="66" y="142" class="note">US$9,500 grant &#183; TS-GLDC passive LPG leak-detection tape</text>
+  <defs>
+    <filter id="e-glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1000" height="460" rx="0" fill="#000000"/>
+  <rect class="edge" x="0.5" y="0.5" width="999" height="459" rx="0"
+        fill="none" stroke="#4C4C4C" stroke-width="1"/>
+  <g><circle cx="781.5" cy="63.4" r="0.81" fill="#FFFFFF" opacity="0.61"/><circle cx="877.0" cy="82.4" r="0.62" fill="#FFFFFF" opacity="0.25"/><circle cx="874.3" cy="352.3" r="1.05" fill="#FFFFFF" opacity="0.24"><animate attributeName="opacity" values="0.24;0.03;0.24" dur="3.0s" begin="1.5s" repeatCount="indefinite"/></circle><circle cx="260.3" cy="46.0" r="0.72" fill="#FFFFFF" opacity="0.53"/><circle cx="955.5" cy="42.0" r="1.25" fill="#FFFFFF" opacity="0.34"/><circle cx="838.6" cy="411.9" r="0.78" fill="#FFFFFF" opacity="0.53"/><circle cx="909.9" cy="209.8" r="0.74" fill="#FFFFFF" opacity="0.22"/><circle cx="913.5" cy="451.8" r="1.24" fill="#FFFFFF" opacity="0.20"><animate attributeName="opacity" values="0.20;0.02;0.20" dur="4.4s" begin="3.2s" repeatCount="indefinite"/></circle><circle cx="351.4" cy="432.1" r="0.68" fill="#FFFFFF" opacity="0.21"/><circle cx="915.4" cy="411.9" r="0.36" fill="#FFFFFF" opacity="0.49"/><circle cx="907.7" cy="22.7" r="0.82" fill="#FFFFFF" opacity="0.23"/><circle cx="727.1" cy="26.7" r="0.64" fill="#FFFFFF" opacity="0.59"/><circle cx="841.8" cy="140.5" r="1.12" fill="#FFFFFF" opacity="0.64"><animate attributeName="opacity" values="0.64;0.08;0.64" dur="2.3s" begin="2.4s" repeatCount="indefinite"/></circle><circle cx="899.1" cy="183.1" r="0.52" fill="#FFFFFF" opacity="0.24"><animate attributeName="opacity" values="0.24;0.03;0.24" dur="4.3s" begin="3.5s" repeatCount="indefinite"/></circle><circle cx="107.0" cy="43.4" r="0.76" fill="#FFFFFF" opacity="0.36"><animate attributeName="opacity" values="0.36;0.04;0.36" dur="4.4s" begin="4.4s" repeatCount="indefinite"/></circle><circle cx="858.8" cy="432.3" r="0.91" fill="#FFFFFF" opacity="0.28"/><circle cx="199.4" cy="48.4" r="0.63" fill="#FFFFFF" opacity="0.49"/><circle cx="964.9" cy="220.0" r="0.43" fill="#FFFFFF" opacity="0.14"><animate attributeName="opacity" values="0.14;0.02;0.14" dur="5.9s" begin="0.2s" repeatCount="indefinite"/></circle><circle cx="214.7" cy="65.1" r="0.97" fill="#FFFFFF" opacity="0.42"/><circle cx="6.6" cy="450.7" r="0.52" fill="#FFFFFF" opacity="0.36"><animate attributeName="opacity" values="0.36;0.04;0.36" dur="2.6s" begin="1.8s" repeatCount="indefinite"/></circle><circle cx="919.9" cy="12.6" r="0.52" fill="#FFFFFF" opacity="0.23"><animate attributeName="opacity" values="0.23;0.03;0.23" dur="6.2s" begin="3.9s" repeatCount="indefinite"/></circle><circle cx="912.1" cy="50.1" r="1.25" fill="#FFFFFF" opacity="0.56"/><circle cx="969.9" cy="229.4" r="0.74" fill="#FFFFFF" opacity="0.60"/><circle cx="460.4" cy="52.7" r="0.86" fill="#FFFFFF" opacity="0.49"><animate attributeName="opacity" values="0.49;0.06;0.49" dur="5.4s" begin="2.0s" repeatCount="indefinite"/></circle><circle cx="752.0" cy="62.0" r="1.05" fill="#FFFFFF" opacity="0.19"/><circle cx="799.2" cy="97.0" r="1.14" fill="#FFFFFF" opacity="0.31"><animate attributeName="opacity" values="0.31;0.04;0.31" dur="2.8s" begin="2.2s" repeatCount="indefinite"/></circle><circle cx="13.0" cy="406.7" r="1.31" fill="#FFFFFF" opacity="0.71"><animate attributeName="opacity" values="0.71;0.08;0.71" dur="2.3s" begin="3.2s" repeatCount="indefinite"/></circle><circle cx="578.3" cy="452.6" r="0.75" fill="#FFFFFF" opacity="0.18"/><circle cx="837.4" cy="368.0" r="1.11" fill="#FFFFFF" opacity="0.23"><animate attributeName="opacity" values="0.23;0.03;0.23" dur="6.2s" begin="2.2s" repeatCount="indefinite"/></circle><circle cx="160.0" cy="40.0" r="0.39" fill="#FFFFFF" opacity="0.14"/><circle cx="816.9" cy="361.5" r="1.05" fill="#FFFFFF" opacity="0.64"><animate attributeName="opacity" values="0.64;0.08;0.64" dur="4.9s" begin="5.0s" repeatCount="indefinite"/></circle><circle cx="943.7" cy="159.7" r="0.77" fill="#FFFFFF" opacity="0.34"/><circle cx="919.8" cy="272.2" r="0.98" fill="#FFFFFF" opacity="0.48"><animate attributeName="opacity" values="0.48;0.06;0.48" dur="3.8s" begin="2.2s" repeatCount="indefinite"/></circle><circle cx="411.3" cy="43.0" r="0.93" fill="#FFFFFF" opacity="0.16"/><circle cx="837.2" cy="25.5" r="1.33" fill="#FFFFFF" opacity="0.15"/><circle cx="553.2" cy="63.5" r="1.37" fill="#FFFFFF" opacity="0.23"/><circle cx="603.3" cy="30.9" r="0.55" fill="#FFFFFF" opacity="0.49"/><circle cx="276.0" cy="29.3" r="1.38" fill="#FFFFFF" opacity="0.70"><animate attributeName="opacity" values="0.70;0.08;0.70" dur="2.6s" begin="3.0s" repeatCount="indefinite"/></circle><circle cx="337.7" cy="447.7" r="0.39" fill="#FFFFFF" opacity="0.19"><animate attributeName="opacity" values="0.19;0.02;0.19" dur="2.5s" begin="3.2s" repeatCount="indefinite"/></circle><circle cx="796.5" cy="428.6" r="1.25" fill="#FFFFFF" opacity="0.79"/><circle cx="825.1" cy="443.9" r="0.73" fill="#FFFFFF" opacity="0.21"><animate attributeName="opacity" values="0.21;0.02;0.21" dur="5.2s" begin="1.8s" repeatCount="indefinite"/></circle><circle cx="964.5" cy="287.6" r="0.44" fill="#FFFFFF" opacity="0.55"><animate attributeName="opacity" values="0.55;0.07;0.55" dur="6.0s" begin="4.2s" repeatCount="indefinite"/></circle><circle cx="548.2" cy="22.2" r="0.45" fill="#FFFFFF" opacity="0.10"/><circle cx="755.0" cy="442.1" r="1.10" fill="#FFFFFF" opacity="0.30"/><circle cx="905.4" cy="42.9" r="0.74" fill="#FFFFFF" opacity="0.57"/><circle cx="943.3" cy="270.3" r="0.56" fill="#FFFFFF" opacity="0.25"/><circle cx="983.7" cy="112.6" r="1.27" fill="#FFFFFF" opacity="0.73"/><circle cx="25.4" cy="150.0" r="0.42" fill="#FFFFFF" opacity="0.45"/><circle cx="618.9" cy="435.5" r="1.29" fill="#FFFFFF" opacity="0.36"><animate attributeName="opacity" values="0.36;0.04;0.36" dur="4.9s" begin="3.1s" repeatCount="indefinite"/></circle><circle cx="983.7" cy="381.7" r="1.05" fill="#FFFFFF" opacity="0.52"/><circle cx="5.9" cy="303.6" r="1.23" fill="#FFFFFF" opacity="0.23"/><circle cx="243.0" cy="7.9" r="1.07" fill="#FFFFFF" opacity="0.56"/><circle cx="444.2" cy="48.4" r="1.13" fill="#FFFFFF" opacity="0.30"/><circle cx="10.1" cy="315.9" r="0.31" fill="#FFFFFF" opacity="0.30"/><circle cx="800.7" cy="173.5" r="1.16" fill="#FFFFFF" opacity="0.17"><animate attributeName="opacity" values="0.17;0.02;0.17" dur="3.9s" begin="2.8s" repeatCount="indefinite"/></circle><circle cx="437.5" cy="63.0" r="1.06" fill="#FFFFFF" opacity="0.46"><animate attributeName="opacity" values="0.46;0.05;0.46" dur="5.3s" begin="0.7s" repeatCount="indefinite"/></circle><circle cx="281.9" cy="40.4" r="0.69" fill="#FFFFFF" opacity="0.15"/><circle cx="795.8" cy="135.3" r="0.37" fill="#FFFFFF" opacity="0.18"/><circle cx="821.4" cy="301.4" r="0.87" fill="#FFFFFF" opacity="0.50"><animate attributeName="opacity" values="0.50;0.06;0.50" dur="4.6s" begin="3.1s" repeatCount="indefinite"/></circle><circle cx="877.2" cy="322.9" r="0.96" fill="#FFFFFF" opacity="0.68"/><circle cx="851.5" cy="331.1" r="0.59" fill="#FFFFFF" opacity="0.24"/><circle cx="847.5" cy="259.0" r="0.68" fill="#FFFFFF" opacity="0.28"/><circle cx="972.4" cy="61.9" r="0.66" fill="#FFFFFF" opacity="0.54"/><circle cx="398.2" cy="53.5" r="0.98" fill="#FFFFFF" opacity="0.71"/><circle cx="813.6" cy="369.4" r="0.98" fill="#FFFFFF" opacity="0.16"/><circle cx="790.2" cy="145.2" r="0.66" fill="#FFFFFF" opacity="0.33"><animate attributeName="opacity" values="0.33;0.04;0.33" dur="2.2s" begin="3.2s" repeatCount="indefinite"/></circle><circle cx="391.0" cy="455.5" r="0.40" fill="#FFFFFF" opacity="0.43"/><circle cx="921.3" cy="23.8" r="0.39" fill="#FFFFFF" opacity="0.52"/><circle cx="911.8" cy="395.4" r="1.13" fill="#FFFFFF" opacity="0.21"/><circle cx="935.3" cy="282.3" r="1.27" fill="#FFFFFF" opacity="0.28"/><circle cx="972.6" cy="180.1" r="0.87" fill="#FFFFFF" opacity="0.48"/><circle cx="380.6" cy="451.8" r="1.39" fill="#FFFFFF" opacity="0.38"/><circle cx="305.6" cy="59.6" r="0.87" fill="#FFFFFF" opacity="0.40"><animate attributeName="opacity" values="0.40;0.05;0.40" dur="6.3s" begin="2.3s" repeatCount="indefinite"/></circle><circle cx="809.5" cy="231.9" r="1.14" fill="#FFFFFF" opacity="0.14"><animate attributeName="opacity" values="0.14;0.02;0.14" dur="5.8s" begin="0.3s" repeatCount="indefinite"/></circle><circle cx="773.4" cy="12.8" r="1.32" fill="#FFFFFF" opacity="0.74"/><circle cx="868.8" cy="176.7" r="0.65" fill="#FFFFFF" opacity="0.35"><animate attributeName="opacity" values="0.35;0.04;0.35" dur="5.0s" begin="3.7s" repeatCount="indefinite"/></circle><circle cx="83.6" cy="436.9" r="1.00" fill="#FFFFFF" opacity="0.23"><animate attributeName="opacity" values="0.23;0.03;0.23" dur="3.8s" begin="0.9s" repeatCount="indefinite"/></circle><circle cx="901.3" cy="369.8" r="1.18" fill="#FFFFFF" opacity="0.62"/><circle cx="619.1" cy="43.7" r="0.66" fill="#FFFFFF" opacity="0.36"/><circle cx="967.0" cy="39.9" r="0.66" fill="#FFFFFF" opacity="0.34"/><circle cx="841.3" cy="335.8" r="1.31" fill="#FFFFFF" opacity="0.51"/><circle cx="918.3" cy="178.1" r="0.63" fill="#FFFFFF" opacity="0.51"/><circle cx="864.8" cy="248.6" r="0.88" fill="#FFFFFF" opacity="0.35"/><circle cx="765.0" cy="431.8" r="0.82" fill="#FFFFFF" opacity="0.48"/><circle cx="758.2" cy="43.1" r="1.18" fill="#FFFFFF" opacity="0.62"/><circle cx="987.9" cy="299.5" r="0.68" fill="#FFFFFF" opacity="0.23"/><circle cx="867.1" cy="240.1" r="0.67" fill="#FFFFFF" opacity="0.13"><animate attributeName="opacity" values="0.13;0.02;0.13" dur="3.5s" begin="4.4s" repeatCount="indefinite"/></circle><circle cx="12.4" cy="103.6" r="1.16" fill="#FFFFFF" opacity="0.54"><animate attributeName="opacity" values="0.54;0.07;0.54" dur="6.4s" begin="4.6s" repeatCount="indefinite"/></circle><circle cx="296.4" cy="45.0" r="0.61" fill="#FFFFFF" opacity="0.49"><animate attributeName="opacity" values="0.49;0.06;0.49" dur="2.9s" begin="1.8s" repeatCount="indefinite"/></circle><circle cx="224.7" cy="33.2" r="1.15" fill="#FFFFFF" opacity="0.68"/><circle cx="983.7" cy="343.8" r="0.99" fill="#FFFFFF" opacity="0.16"/><circle cx="396.8" cy="47.4" r="1.13" fill="#FFFFFF" opacity="0.69"><animate attributeName="opacity" values="0.69;0.08;0.69" dur="4.2s" begin="4.2s" repeatCount="indefinite"/></circle><circle cx="28.9" cy="267.0" r="0.77" fill="#FFFFFF" opacity="0.26"><animate attributeName="opacity" values="0.26;0.03;0.26" dur="6.2s" begin="0.2s" repeatCount="indefinite"/></circle><circle cx="380.3" cy="451.9" r="0.38" fill="#FFFFFF" opacity="0.44"/><circle cx="588.4" cy="441.5" r="1.03" fill="#FFFFFF" opacity="0.56"><animate attributeName="opacity" values="0.56;0.07;0.56" dur="5.7s" begin="0.7s" repeatCount="indefinite"/></circle><circle cx="446.4" cy="449.4" r="0.76" fill="#FFFFFF" opacity="0.49"><animate attributeName="opacity" values="0.49;0.06;0.49" dur="2.4s" begin="0.2s" repeatCount="indefinite"/></circle><circle cx="483.4" cy="4.9" r="1.35" fill="#FFFFFF" opacity="0.55"/><circle cx="648.8" cy="430.8" r="0.32" fill="#FFFFFF" opacity="0.51"><animate attributeName="opacity" values="0.51;0.06;0.51" dur="4.2s" begin="4.8s" repeatCount="indefinite"/></circle><circle cx="904.5" cy="275.3" r="1.37" fill="#FFFFFF" opacity="0.36"/><circle cx="780.1" cy="54.9" r="1.04" fill="#FFFFFF" opacity="0.40"/><circle cx="954.1" cy="48.3" r="0.86" fill="#FFFFFF" opacity="0.20"/><circle cx="676.0" cy="10.5" r="0.82" fill="#FFFFFF" opacity="0.49"/><circle cx="25.0" cy="189.0" r="1.22" fill="#FFFFFF" opacity="0.21"/><circle cx="865.1" cy="194.9" r="1.02" fill="#FFFFFF" opacity="0.17"/><circle cx="582.0" cy="42.3" r="0.39" fill="#FFFFFF" opacity="0.49"/><circle cx="74.5" cy="16.0" r="0.79" fill="#FFFFFF" opacity="0.42"><animate attributeName="opacity" values="0.42;0.05;0.42" dur="3.7s" begin="2.0s" repeatCount="indefinite"/></circle><circle cx="894.2" cy="77.8" r="1.31" fill="#FFFFFF" opacity="0.54"/><circle cx="253.8" cy="445.2" r="1.04" fill="#FFFFFF" opacity="0.39"/><circle cx="556.8" cy="43.8" r="0.60" fill="#FFFFFF" opacity="0.49"><animate attributeName="opacity" values="0.49;0.06;0.49" dur="2.9s" begin="5.0s" repeatCount="indefinite"/></circle><circle cx="638.6" cy="42.6" r="1.10" fill="#FFFFFF" opacity="0.32"/><circle cx="942.3" cy="410.1" r="0.39" fill="#FFFFFF" opacity="0.34"/><circle cx="778.9" cy="61.0" r="0.69" fill="#FFFFFF" opacity="0.62"/><circle cx="627.3" cy="452.0" r="0.80" fill="#FFFFFF" opacity="0.65"><animate attributeName="opacity" values="0.65;0.08;0.65" dur="6.1s" begin="0.5s" repeatCount="indefinite"/></circle><circle cx="214.5" cy="446.6" r="0.81" fill="#FFFFFF" opacity="0.42"/><circle cx="872.1" cy="258.4" r="0.84" fill="#FFFFFF" opacity="0.32"/><circle cx="826.0" cy="217.0" r="0.42" fill="#FFFFFF" opacity="0.40"/><circle cx="874.5" cy="141.5" r="0.64" fill="#FFFFFF" opacity="0.37"/><circle cx="846.5" cy="232.2" r="0.75" fill="#FFFFFF" opacity="0.35"><animate attributeName="opacity" values="0.35;0.04;0.35" dur="6.1s" begin="3.8s" repeatCount="indefinite"/></circle><circle cx="76.6" cy="29.3" r="0.94" fill="#FFFFFF" opacity="0.45"/><circle cx="910.9" cy="56.7" r="1.30" fill="#FFFFFF" opacity="0.65"/></g>
+  <text x="28" y="34" font-size="12.5" fill="#6B6B6B">akshat@jamshedpur:~$</text>
+  <text x="186" y="34" font-size="12.5" fill="#FFFFFF">ps --roles --current</text>
+  <line x1="28" y1="48" x2="972" y2="48" stroke="#1C1C1C" stroke-width="1"/>
+  <rect x="28" y="47" width="58" height="1.5" fill="#FFFFFF" opacity="0.8">
+    <animate attributeName="x" values="28;914;28" dur="11s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.85;0.1" dur="11s" repeatCount="indefinite"/>
+  </rect>
+  <line x1="45" y1="86" x2="45" y2="365" stroke="#3C3C3C" stroke-width="1"/>
+  <g class="rise" style="animation-delay:0.25s">
+    <rect x="38" y="89" width="14" height="14" fill="none" stroke="#FFFFFF" stroke-width="1"><animate attributeName="width" values="14;26" dur="2.6s" begin="0.0s" repeatCount="indefinite"/><animate attributeName="height" values="14;26" dur="2.6s" begin="0.0s" repeatCount="indefinite"/><animate attributeName="x" values="38;32" dur="2.6s" begin="0.0s" repeatCount="indefinite"/><animate attributeName="y" values="89;83" dur="2.6s" begin="0.0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0" dur="2.6s" begin="0.0s" repeatCount="indefinite"/></rect><rect x="38" y="89" width="14" height="14" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.4"/>
+    <text x="72" y="100" font-size="10.5" fill="#6B6B6B" letter-spacing="1.6">OCT 2026 — PRESENT</text>
+    <text x="72" y="123" font-size="15" font-weight="bold" fill="#FFFFFF">Mercatus Center, George Mason University</text>
+    <text x="72" y="143" font-size="13" fill="#A6A6A6">Emergent Ventures Grantee</text>
+    <text x="72" y="162" font-size="11.5" fill="#6B6B6B">US$9,500 grant · TS-GLDC passive LPG leak-detection tape</text>
+  </g>
+  <g class="rise" style="animation-delay:0.40s">
+    <rect x="38" y="181" width="14" height="14" fill="none" stroke="#FFFFFF" stroke-width="1"><animate attributeName="width" values="14;26" dur="2.6s" begin="0.5s" repeatCount="indefinite"/><animate attributeName="height" values="14;26" dur="2.6s" begin="0.5s" repeatCount="indefinite"/><animate attributeName="x" values="38;32" dur="2.6s" begin="0.5s" repeatCount="indefinite"/><animate attributeName="y" values="181;175" dur="2.6s" begin="0.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0" dur="2.6s" begin="0.5s" repeatCount="indefinite"/></rect><rect x="38" y="181" width="14" height="14" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.4"/>
+    <text x="72" y="192" font-size="10.5" fill="#6B6B6B" letter-spacing="1.6">AUG 2026 — PRESENT</text>
+    <text x="72" y="215" font-size="15" font-weight="bold" fill="#FFFFFF">Akshen Electric</text>
+    <text x="72" y="235" font-size="13" fill="#A6A6A6">Intern</text>
+    <text x="72" y="254" font-size="11.5" fill="#6B6B6B">EV two-wheeler market research, validation &amp; roadmap input</text>
+  </g>
+  <g class="rise" style="animation-delay:0.55s">
+    <rect x="38" y="273" width="14" height="14" fill="none" stroke="#FFFFFF" stroke-width="1"><animate attributeName="width" values="14;26" dur="2.6s" begin="0.9s" repeatCount="indefinite"/><animate attributeName="height" values="14;26" dur="2.6s" begin="0.9s" repeatCount="indefinite"/><animate attributeName="x" values="38;32" dur="2.6s" begin="0.9s" repeatCount="indefinite"/><animate attributeName="y" values="273;267" dur="2.6s" begin="0.9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0" dur="2.6s" begin="0.9s" repeatCount="indefinite"/></rect><rect x="38" y="273" width="14" height="14" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.4"/>
+    <text x="72" y="284" font-size="10.5" fill="#6B6B6B" letter-spacing="1.6">JAN 2026 — PRESENT</text>
+    <text x="72" y="307" font-size="15" font-weight="bold" fill="#FFFFFF">NIT Jamshedpur · CIIC</text>
+    <text x="72" y="327" font-size="13" fill="#A6A6A6">Incubatee</text>
+    <text x="72" y="346" font-size="11.5" fill="#6B6B6B">Leading the smart-grid venture under the DST–NIDHI ecosystem</text>
+  </g>
+  <g class="rise" style="animation-delay:0.70s">
+    <rect x="38" y="365" width="14" height="14" fill="none" stroke="#FFFFFF" stroke-width="1.4"/>
+    <text x="72" y="376" font-size="10.5" fill="#6B6B6B" letter-spacing="1.6">MAY 2026 — JUN 2026</text>
+    <text x="72" y="399" font-size="15" font-weight="bold" fill="#FFFFFF">IIT Kharagpur · CoE in Adv. Mfg. Technology</text>
+    <text x="72" y="419" font-size="13" fill="#A6A6A6">External Collaborator — Machine Vision Researcher</text>
+    <text x="72" y="438" font-size="11.5" fill="#6B6B6B">Custom CNN for pixel-level SMD, MCU &amp; PCB trace defect detection</text>
   </g>
 
-  <g class="row e2">
-    <circle class="dot" cx="40" cy="168" r="5"/>
-    <circle class="live" cx="40" cy="168" r="2"/>
-    <text x="66" y="172" class="date">AUG 2026 &#8212; PRESENT</text>
-    <text x="66" y="192" class="org">Akshen Electric</text>
-    <text x="66" y="210" class="role">Intern</text>
-    <text x="66" y="228" class="note">EV two-wheeler market research, validation &amp; roadmap input</text>
-  </g>
-
-  <g class="row e3">
-    <circle class="dot" cx="40" cy="254" r="5"/>
-    <circle class="live" cx="40" cy="254" r="2"/>
-    <text x="66" y="258" class="date">JAN 2026 &#8212; PRESENT</text>
-    <text x="66" y="278" class="org">NIT Jamshedpur &#183; CIIC</text>
-    <text x="66" y="296" class="role">Incubatee</text>
-    <text x="66" y="314" class="note">Leading the smart-grid venture under the DST&#8211;NIDHI ecosystem</text>
-  </g>
-
-  <g class="row e4">
-    <circle class="dot" cx="40" cy="340" r="5"/>
-    <text x="66" y="344" class="date">MAY 2026 &#8212; JUN 2026</text>
-    <text x="66" y="364" class="org">IIT Kharagpur &#183; CoE in Adv. Mfg. Technology</text>
-    <text x="66" y="382" class="role">External Collaborator &#8212; Machine Vision Researcher</text>
-    <text x="66" y="400" class="note">Custom CNN for pixel-level SMD, MCU &amp; PCB trace defect detection</text>
-  </g>
 </svg>
