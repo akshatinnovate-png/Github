@@ -1,0 +1,69 @@
+<svg width="640" height="264" viewBox="0 0 640 264" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #0A0A0A; }
+    .border {
+      fill: none;
+      stroke: #2A2A2A;
+      stroke-width: 1.5;
+      animation: glow 3.5s ease-in-out infinite;
+    }
+    @keyframes glow {
+      0%, 100% { stroke: #2A2A2A; }
+      50% { stroke: #5A5A5A; }
+    }
+    .path  { fill: #777777; font-family: 'Courier New', monospace; font-size: 13px; }
+    .label { fill: #666666; font-family: 'Courier New', monospace; font-size: 14px; letter-spacing: 1px; }
+    .value { fill: #FFFFFF; font-family: 'Courier New', monospace; font-size: 14px; }
+    .line { opacity: 1; animation: reveal 0.4s ease backwards; }
+    .l1 { animation-delay: 0.20s; }
+    .l2 { animation-delay: 0.75s; }
+    .l3 { animation-delay: 1.30s; }
+    .l4 { animation-delay: 1.85s; }
+    .l5 { animation-delay: 2.40s; }
+    @keyframes reveal {
+      from { opacity: 0; transform: translateY(4px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .cursor {
+      fill: #FFFFFF;
+      animation: blink 1s step-end infinite;
+      animation-delay: 2.7s;
+    }
+    @keyframes blink {
+      0%, 49%   { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+  </style>
+
+  <rect class="bg" width="640" height="264" rx="12"/>
+  <rect class="border" x="1.5" y="1.5" width="637" height="261" rx="12"/>
+
+  <text x="28" y="38" class="path">/usr/bin/akshat --whoami</text>
+  <line x1="28" y1="52" x2="612" y2="52" stroke="#222222" stroke-width="1"/>
+
+  <g class="line l1">
+    <text x="28"  y="92" class="label">USER</text>
+    <text x="168" y="92" class="value">Akshat Sarkar</text>
+  </g>
+
+  <g class="line l2">
+    <text x="28"  y="126" class="label">ROLE</text>
+    <text x="168" y="126" class="value">DeepTech Founder / AI Researcher</text>
+  </g>
+
+  <g class="line l3">
+    <text x="28"  y="160" class="label">LAB</text>
+    <text x="168" y="160" class="value">CoE in Adv. Mfg. Tech, IIT Kharagpur</text>
+  </g>
+
+  <g class="line l4">
+    <text x="28"  y="194" class="label">ORIGIN</text>
+    <text x="168" y="194" class="value">Jamshedpur, Jharkhand, India</text>
+  </g>
+
+  <g class="line l5">
+    <text x="28"  y="228" class="label">STATUS</text>
+    <text x="168" y="228" class="value">Shipping systems, not demos</text>
+    <rect class="cursor" x="452" y="216" width="9" height="16"/>
+  </g>
+</svg>

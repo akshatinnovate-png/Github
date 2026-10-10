@@ -1,0 +1,66 @@
+<svg width="640" height="264" viewBox="0 0 640 264" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #0A0A0A; }
+    .border {
+      fill: none; stroke: #2A2A2A; stroke-width: 1.5;
+      animation: glow 3.5s ease-in-out infinite;
+    }
+    @keyframes glow {
+      0%, 100% { stroke: #2A2A2A; }
+      50% { stroke: #5A5A5A; }
+    }
+    .path  { fill: #777777; font-family: 'Courier New', monospace; font-size: 13px; }
+    .arrow { fill: #FFFFFF; font-family: 'Courier New', monospace; font-size: 16px; }
+    .item  { fill: #AAAAAA; font-family: 'Courier New', monospace; font-size: 15px; }
+    .row { opacity: 1; animation: reveal 0.45s ease backwards; }
+    .r1 { animation-delay: 0.2s; }
+    .r2 { animation-delay: 0.7s; }
+    .r3 { animation-delay: 1.2s; }
+    .r4 { animation-delay: 1.7s; }
+    .r5 { animation-delay: 2.2s; }
+    @keyframes reveal {
+      from { opacity: 0; transform: translateX(-6px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    .row .arrow { animation: pulse 2.5s ease-in-out infinite; }
+    .r2 .arrow { animation-delay: 0.3s; }
+    .r3 .arrow { animation-delay: 0.6s; }
+    .r4 .arrow { animation-delay: 0.9s; }
+    .r5 .arrow { animation-delay: 1.2s; }
+    @keyframes pulse {
+      0%, 100% { fill: #FFFFFF; }
+      50% { fill: #666666; }
+    }
+  </style>
+
+  <rect class="bg" width="640" height="264" rx="12"/>
+  <rect class="border" x="1.5" y="1.5" width="637" height="261" rx="12"/>
+
+  <text x="28" y="38" class="path">/usr/bin/akshat/focus</text>
+  <line x1="28" y1="52" x2="612" y2="52" stroke="#222222" stroke-width="1"/>
+
+  <g class="row r1">
+    <text x="28" y="92" class="arrow">&#8594;</text>
+    <text x="58" y="92" class="item">Smart microgrids &amp; peer-to-peer energy trading</text>
+  </g>
+
+  <g class="row r2">
+    <text x="28" y="126" class="arrow">&#8594;</text>
+    <text x="58" y="126" class="item">Industrial machine vision for PCB / SMD inspection</text>
+  </g>
+
+  <g class="row r3">
+    <text x="28" y="160" class="arrow">&#8594;</text>
+    <text x="58" y="160" class="item">Offline-first edge AI with durable memory</text>
+  </g>
+
+  <g class="row r4">
+    <text x="28" y="194" class="arrow">&#8594;</text>
+    <text x="58" y="194" class="item">Multi-objective logistics &amp; emissions routing</text>
+  </g>
+
+  <g class="row r5">
+    <text x="28" y="228" class="arrow">&#8594;</text>
+    <text x="58" y="228" class="item">Assistive and low-cost safety hardware</text>
+  </g>
+</svg>

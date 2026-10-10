@@ -1,0 +1,77 @@
+<svg width="640" height="428" viewBox="0 0 640 428" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #0A0A0A; }
+    .border {
+      fill: none; stroke: #2A2A2A; stroke-width: 1.5;
+      animation: glow 3.5s ease-in-out infinite;
+    }
+    @keyframes glow {
+      0%, 100% { stroke: #2A2A2A; }
+      50% { stroke: #5A5A5A; }
+    }
+    .path { fill: #777777; font-family: 'Courier New', monospace; font-size: 13px; }
+    .date { fill: #666666; font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 1.2px; }
+    .org  { fill: #FFFFFF; font-family: 'Courier New', monospace; font-size: 14px; font-weight: bold; }
+    .role { fill: #9A9A9A; font-family: 'Courier New', monospace; font-size: 13px; }
+    .note { fill: #5E5E5E; font-family: 'Courier New', monospace; font-size: 11.5px; }
+    .rail { stroke: #242424; stroke-width: 1.5; }
+    .dot  { fill: #0A0A0A; stroke: #FFFFFF; stroke-width: 1.6; }
+    .row { opacity: 1; animation: reveal 0.5s ease backwards; }
+    .e1 { animation-delay: 0.25s; }
+    .e2 { animation-delay: 0.80s; }
+    .e3 { animation-delay: 1.35s; }
+    .e4 { animation-delay: 1.90s; }
+    @keyframes reveal {
+      from { opacity: 0; transform: translateX(-8px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    .live { fill: #FFFFFF; animation: beat 1.8s ease-in-out infinite; }
+    @keyframes beat {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+  </style>
+
+  <rect class="bg" width="640" height="428" rx="12"/>
+  <rect class="border" x="1.5" y="1.5" width="637" height="425" rx="12"/>
+
+  <text x="28" y="38" class="path">/usr/bin/akshat/experience --current</text>
+  <line x1="28" y1="52" x2="612" y2="52" stroke="#222222" stroke-width="1"/>
+
+  <line class="rail" x1="40" y1="78" x2="40" y2="354"/>
+
+  <g class="row e1">
+    <circle class="dot" cx="40" cy="82" r="5"/>
+    <circle class="live" cx="40" cy="82" r="2"/>
+    <text x="66" y="86"  class="date">OCT 2026 &#8212; PRESENT</text>
+    <text x="66" y="106" class="org">Mercatus Center, George Mason University</text>
+    <text x="66" y="124" class="role">Emergent Ventures Grantee</text>
+    <text x="66" y="142" class="note">US$9,500 grant &#183; TS-GLDC passive LPG leak-detection tape</text>
+  </g>
+
+  <g class="row e2">
+    <circle class="dot" cx="40" cy="168" r="5"/>
+    <circle class="live" cx="40" cy="168" r="2"/>
+    <text x="66" y="172" class="date">AUG 2026 &#8212; PRESENT</text>
+    <text x="66" y="192" class="org">Akshen Electric</text>
+    <text x="66" y="210" class="role">Intern</text>
+    <text x="66" y="228" class="note">EV two-wheeler market research, validation &amp; roadmap input</text>
+  </g>
+
+  <g class="row e3">
+    <circle class="dot" cx="40" cy="254" r="5"/>
+    <circle class="live" cx="40" cy="254" r="2"/>
+    <text x="66" y="258" class="date">JAN 2026 &#8212; PRESENT</text>
+    <text x="66" y="278" class="org">NIT Jamshedpur &#183; CIIC</text>
+    <text x="66" y="296" class="role">Incubatee</text>
+    <text x="66" y="314" class="note">Leading the smart-grid venture under the DST&#8211;NIDHI ecosystem</text>
+  </g>
+
+  <g class="row e4">
+    <circle class="dot" cx="40" cy="340" r="5"/>
+    <text x="66" y="344" class="date">MAY 2026 &#8212; JUN 2026</text>
+    <text x="66" y="364" class="org">IIT Kharagpur &#183; CoE in Adv. Mfg. Technology</text>
+    <text x="66" y="382" class="role">External Collaborator &#8212; Machine Vision Researcher</text>
+    <text x="66" y="400" class="note">Custom CNN for pixel-level SMD, MCU &amp; PCB trace defect detection</text>
+  </g>
+</svg>

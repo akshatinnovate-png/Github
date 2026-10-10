@@ -1,0 +1,97 @@
+<svg width="640" height="380" viewBox="0 0 640 380" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #0A0A0A; }
+    .border {
+      fill: none; stroke: #2A2A2A; stroke-width: 1.5;
+      animation: glow 3.5s ease-in-out infinite;
+    }
+    @keyframes glow {
+      0%, 100% { stroke: #2A2A2A; }
+      50% { stroke: #5A5A5A; }
+    }
+    .path   { fill: #777777; font-family: 'Courier New', monospace; font-size: 13px; }
+    .banner { fill: #FFFFFF; font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 0.4px; }
+    .mark   { fill: #FFFFFF; font-family: 'Courier New', monospace; font-size: 10px; }
+    .award  { fill: #CFCFCF; font-family: 'Courier New', monospace; font-size: 12.5px; }
+    .proj   { fill: #5A5A5A; font-family: 'Courier New', monospace; font-size: 10.5px; }
+    .row { opacity: 1; animation: reveal 0.4s ease backwards; }
+    .a1 { animation-delay: 0.30s; } .a2 { animation-delay: 0.52s; }
+    .a3 { animation-delay: 0.74s; } .a4 { animation-delay: 0.96s; }
+    .a5 { animation-delay: 1.18s; } .a6 { animation-delay: 1.40s; }
+    .a7 { animation-delay: 1.62s; } .a8 { animation-delay: 1.84s; }
+    @keyframes reveal {
+      from { opacity: 0; transform: translateX(-6px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    .row .mark { animation: pulse 3s ease-in-out infinite; }
+    .a2 .mark { animation-delay: 0.2s; } .a3 .mark { animation-delay: 0.4s; }
+    .a4 .mark { animation-delay: 0.6s; } .a5 .mark { animation-delay: 0.8s; }
+    .a6 .mark { animation-delay: 1.0s; } .a7 .mark { animation-delay: 1.2s; }
+    .a8 .mark { animation-delay: 1.4s; }
+    @keyframes pulse {
+      0%, 100% { fill: #FFFFFF; }
+      50% { fill: #585858; }
+    }
+    .sweep { opacity: 1; animation: fadein 0.6s ease backwards 0.1s; }
+    @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+  </style>
+
+  <rect class="bg" width="640" height="380" rx="12"/>
+  <rect class="border" x="1.5" y="1.5" width="637" height="377" rx="12"/>
+
+  <text x="28" y="38" class="path">/usr/bin/akshat/recognition</text>
+  <line x1="28" y1="52" x2="612" y2="52" stroke="#222222" stroke-width="1"/>
+
+  <g class="sweep">
+    <text x="28" y="80" class="banner">Youngest awardee in the history of Samsung Solve for Tomorrow India.</text>
+    <line x1="28" y1="94" x2="612" y2="94" stroke="#1C1C1C" stroke-width="1"/>
+  </g>
+
+  <g class="row a1">
+    <text x="30" y="126" class="mark">&#9670;</text>
+    <text x="50" y="126" class="award">Top 40 &#8212; Samsung Solve for Tomorrow India 2026</text>
+    <text x="612" y="126" text-anchor="end" class="proj">Kinexa</text>
+  </g>
+
+  <g class="row a2">
+    <text x="30" y="160" class="mark">&#9670;</text>
+    <text x="50" y="160" class="award">INSPIRE MANAK &#8212; DST &amp; NIF India</text>
+    <text x="612" y="160" text-anchor="end" class="proj">TS-GLDC</text>
+  </g>
+
+  <g class="row a3">
+    <text x="30" y="194" class="mark">&#9670;</text>
+    <text x="50" y="194" class="award">Startup incubation &#8212; CIIC, NIT Jamshedpur</text>
+    <text x="612" y="194" text-anchor="end" class="proj">GridSphere</text>
+  </g>
+
+  <g class="row a4">
+    <text x="30" y="228" class="mark">&#9670;</text>
+    <text x="50" y="228" class="award">First Position &#8212; Amazon AWS</text>
+    <text x="612" y="228" text-anchor="end" class="proj">Fraud Detection</text>
+  </g>
+
+  <g class="row a5">
+    <text x="30" y="262" class="mark">&#9670;</text>
+    <text x="50" y="262" class="award">Top 5 &#8212; Industry Academia Conclave 2025, NIT JSR</text>
+    <text x="612" y="262" text-anchor="end" class="proj">GridSphere</text>
+  </g>
+
+  <g class="row a6">
+    <text x="30" y="296" class="mark">&#9670;</text>
+    <text x="50" y="296" class="award">Runner-up &#8212; SparkX, IIT Bombay Techfest 2025</text>
+    <text x="612" y="296" text-anchor="end" class="proj">Cyberbullying Detection</text>
+  </g>
+
+  <g class="row a7">
+    <text x="30" y="330" class="mark">&#9670;</text>
+    <text x="50" y="330" class="award">Runner-up &#8212; Blixathon, IIT Bombay Techfest 2024</text>
+    <text x="612" y="330" text-anchor="end" class="proj">Blix Bot</text>
+  </g>
+
+  <g class="row a8">
+    <text x="30" y="364" class="mark">&#9670;</text>
+    <text x="50" y="364" class="award">Runner-up &#8212; Design Championship 2025 (ICT 360)</text>
+    <text x="612" y="364" text-anchor="end" class="proj">Waste Mgmt Software</text>
+  </g>
+</svg>
