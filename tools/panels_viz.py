@@ -49,7 +49,7 @@ def metrics(_root):
 {prompt(W, "akshat --stats")}
 {chr(10).join(out)}
 """
-    return svg(W, h, body, base_css())
+    return svg(W, h, body, base_css(), sw=("m", 12, 0.5))
 
 
 # ------------------------------------------------------- language meters --
@@ -99,7 +99,7 @@ def meter(_root):
 {chr(10).join(out)}
 {note}
 """
-    return svg(W, h, body, base_css())
+    return svg(W, h, body, base_css(), sw=("l", 16, 1.5))
 
 
 # ------------------------------------------------------------ unit chart --
@@ -141,7 +141,7 @@ def units(_root):
   <text x="28" y="72" font-size="10.5" fill="{INK_FAINT}">one square = one thing · 10 shipped, 9 recognised</text>
 {chr(10).join(out)}
 """
-    return svg(w, h, body, base_css())
+    return svg(w, h, body, base_css(), sw=("u", 14, 0.8))
 
 
 # ----------------------------------------------------------------- reach --
@@ -190,7 +190,7 @@ def reach(_root):
   <text x="28" y="72" font-size="10.5" fill="{INK_FAINT}">built in Jharkhand · recognised nationally</text>
 {chr(10).join(out)}
 """
-    return svg(w, h, body, base_css())
+    return svg(w, h, body, base_css(), sw=("r", 14, 3.2))
 
 
 # -------------------------------------------------------- constellation --
@@ -251,4 +251,4 @@ def works(_root):
 {chr(10).join(out)}
   <text x="28" y="{h - 18}" font-size="10" fill="{INK_FAINT}">a line joins two projects that share a theme · a node grows with the links it carries</text>
 """
-    return svg(W, h, body, base_css())
+    return svg(W, h, body, base_css(), sw=("k", 18, 4.0))

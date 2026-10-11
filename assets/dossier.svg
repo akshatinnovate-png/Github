@@ -1,0 +1,170 @@
+<svg width="1000" height="834" viewBox="0 0 1000 834" xmlns="http://www.w3.org/2000/svg" role="img">
+  <style>
+    .edge { animation: edge 7s ease-in-out infinite; }
+    @keyframes edge { 0%,100% { opacity: .35; } 50% { opacity: .85; } }
+    .rise { opacity: 1; animation: rise .5s steps(6,end) backwards; }
+    @keyframes rise { from { opacity: 0; transform: translateY(6px); }
+                       to   { opacity: 1; transform: translateY(0); } }
+    .slide { opacity: 1; animation: slide .45s steps(6,end) backwards; }
+    @keyframes slide { from { opacity: 0; transform: translateX(-10px); }
+                        to   { opacity: 1; transform: translateX(0); } }
+    .type { opacity: 1; animation: type .3s steps(2,end) backwards; }
+    @keyframes type { from { opacity: 0; } to { opacity: 1; } }
+    .pop { opacity: 1; animation: pop .5s cubic-bezier(.2,.9,.3,1.1) backwards; }
+    @keyframes pop { from { opacity: 0; transform: scale(.8); }
+                      to   { opacity: 1; transform: scale(1); } }
+    text { font-family: 'Courier New', ui-monospace, monospace; }
+  </style>
+  <defs>
+    <filter id="ds-glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <title>Selected work: ten projects, 2024 to 2026</title>
+  <desc>A dossier of ten engineering projects with year, description and recognition: GridSphere, CarbonRoute, PCB Inspector, Aegis Edge, Fraud Detection, TS-GLDC, Kinexa, Waste Management, Cyberbullying Detection and Blix Bot.</desc>
+  <rect width="1000" height="834" rx="0" fill="#000000"/>
+  <rect class="edge" x="0.5" y="0.5" width="999" height="833" rx="0"
+        fill="none" stroke="#4C4C4C" stroke-width="1"/>
+  <g><circle cx="980.4" cy="807.4" r="0.64" fill="#FFFFFF" opacity="0.39"/><circle cx="971.9" cy="79.0" r="0.86" fill="#FFFFFF" opacity="0.18"><animate attributeName="opacity" values="0.18;0.02;0.18" dur="4.6s" begin="1.3s" repeatCount="indefinite"/></circle><circle cx="966.1" cy="26.8" r="0.38" fill="#FFFFFF" opacity="0.48"/><circle cx="973.5" cy="85.5" r="0.34" fill="#FFFFFF" opacity="0.26"><animate attributeName="opacity" values="0.26;0.03;0.26" dur="4.3s" begin="4.0s" repeatCount="indefinite"/></circle><circle cx="956.3" cy="506.0" r="1.05" fill="#FFFFFF" opacity="0.60"/><circle cx="416.0" cy="15.8" r="0.37" fill="#FFFFFF" opacity="0.50"/><circle cx="286.5" cy="47.3" r="0.61" fill="#FFFFFF" opacity="0.16"/><circle cx="699.5" cy="7.3" r="1.07" fill="#FFFFFF" opacity="0.53"/><circle cx="535.2" cy="52.5" r="0.48" fill="#FFFFFF" opacity="0.22"/><circle cx="782.5" cy="6.7" r="0.58" fill="#FFFFFF" opacity="0.13"/><circle cx="840.6" cy="34.1" r="1.07" fill="#FFFFFF" opacity="0.45"><animate attributeName="opacity" values="0.45;0.05;0.45" dur="3.4s" begin="2.1s" repeatCount="indefinite"/></circle><circle cx="942.0" cy="662.8" r="0.93" fill="#FFFFFF" opacity="0.14"/><circle cx="758.5" cy="819.5" r="0.32" fill="#FFFFFF" opacity="0.20"/><circle cx="635.9" cy="41.1" r="0.88" fill="#FFFFFF" opacity="0.42"><animate attributeName="opacity" values="0.42;0.05;0.42" dur="4.0s" begin="1.8s" repeatCount="indefinite"/></circle><circle cx="13.0" cy="782.8" r="1.22" fill="#FFFFFF" opacity="0.73"/><circle cx="31.5" cy="815.2" r="1.11" fill="#FFFFFF" opacity="0.14"><animate attributeName="opacity" values="0.14;0.02;0.14" dur="5.4s" begin="1.3s" repeatCount="indefinite"/></circle><circle cx="985.6" cy="109.7" r="0.38" fill="#FFFFFF" opacity="0.16"><animate attributeName="opacity" values="0.16;0.02;0.16" dur="3.7s" begin="0.2s" repeatCount="indefinite"/></circle><circle cx="128.8" cy="59.1" r="0.79" fill="#FFFFFF" opacity="0.39"/><circle cx="965.5" cy="311.5" r="1.22" fill="#FFFFFF" opacity="0.22"/><circle cx="920.5" cy="36.9" r="0.35" fill="#FFFFFF" opacity="0.20"/><circle cx="607.4" cy="61.6" r="0.47" fill="#FFFFFF" opacity="0.47"><animate attributeName="opacity" values="0.47;0.06;0.47" dur="5.7s" begin="4.4s" repeatCount="indefinite"/></circle><circle cx="286.3" cy="819.4" r="1.13" fill="#FFFFFF" opacity="0.48"/><circle cx="404.3" cy="5.7" r="1.09" fill="#FFFFFF" opacity="0.67"/><circle cx="985.2" cy="740.3" r="1.13" fill="#FFFFFF" opacity="0.21"/><circle cx="387.4" cy="31.6" r="0.50" fill="#FFFFFF" opacity="0.56"/><circle cx="183.5" cy="810.3" r="0.70" fill="#FFFFFF" opacity="0.53"/><circle cx="504.5" cy="23.8" r="0.49" fill="#FFFFFF" opacity="0.25"/><circle cx="970.2" cy="278.3" r="0.50" fill="#FFFFFF" opacity="0.31"/><circle cx="641.0" cy="51.4" r="0.51" fill="#FFFFFF" opacity="0.16"/><circle cx="959.9" cy="8.6" r="1.08" fill="#FFFFFF" opacity="0.28"/><circle cx="864.9" cy="44.0" r="0.62" fill="#FFFFFF" opacity="0.10"/><circle cx="6.2" cy="344.7" r="0.58" fill="#FFFFFF" opacity="0.15"/><circle cx="959.2" cy="656.3" r="1.21" fill="#FFFFFF" opacity="0.59"/><circle cx="899.6" cy="809.1" r="0.72" fill="#FFFFFF" opacity="0.62"><animate attributeName="opacity" values="0.62;0.07;0.62" dur="5.6s" begin="2.5s" repeatCount="indefinite"/></circle><circle cx="707.2" cy="53.8" r="1.33" fill="#FFFFFF" opacity="0.82"><animate attributeName="opacity" values="0.82;0.10;0.82" dur="3.8s" begin="2.8s" repeatCount="indefinite"/></circle><circle cx="19.6" cy="451.0" r="0.51" fill="#FFFFFF" opacity="0.34"><animate attributeName="opacity" values="0.34;0.04;0.34" dur="5.8s" begin="0.6s" repeatCount="indefinite"/></circle><circle cx="371.3" cy="828.1" r="1.23" fill="#FFFFFF" opacity="0.32"/><circle cx="897.5" cy="814.4" r="1.15" fill="#FFFFFF" opacity="0.77"/><circle cx="923.0" cy="403.2" r="0.85" fill="#FFFFFF" opacity="0.53"/><circle cx="857.3" cy="34.1" r="0.59" fill="#FFFFFF" opacity="0.42"><animate attributeName="opacity" values="0.42;0.05;0.42" dur="6.2s" begin="3.7s" repeatCount="indefinite"/></circle><circle cx="215.3" cy="20.4" r="0.75" fill="#FFFFFF" opacity="0.26"/><circle cx="10.0" cy="816.1" r="1.38" fill="#FFFFFF" opacity="0.29"/><circle cx="967.8" cy="625.4" r="0.88" fill="#FFFFFF" opacity="0.26"/><circle cx="948.1" cy="298.3" r="1.09" fill="#FFFFFF" opacity="0.24"/><circle cx="964.4" cy="661.7" r="0.64" fill="#FFFFFF" opacity="0.34"><animate attributeName="opacity" values="0.34;0.04;0.34" dur="5.6s" begin="2.8s" repeatCount="indefinite"/></circle><circle cx="936.9" cy="341.4" r="0.83" fill="#FFFFFF" opacity="0.58"/><circle cx="946.6" cy="781.1" r="0.42" fill="#FFFFFF" opacity="0.23"/><circle cx="927.3" cy="60.8" r="1.34" fill="#FFFFFF" opacity="0.21"/><circle cx="454.4" cy="822.8" r="0.84" fill="#FFFFFF" opacity="0.59"/><circle cx="956.3" cy="563.0" r="0.65" fill="#FFFFFF" opacity="0.59"><animate attributeName="opacity" values="0.59;0.07;0.59" dur="3.4s" begin="0.3s" repeatCount="indefinite"/></circle><circle cx="978.6" cy="668.3" r="1.10" fill="#FFFFFF" opacity="0.25"/><circle cx="6.2" cy="774.0" r="0.98" fill="#FFFFFF" opacity="0.37"/><circle cx="144.9" cy="47.3" r="1.29" fill="#FFFFFF" opacity="0.36"/><circle cx="569.3" cy="23.8" r="1.15" fill="#FFFFFF" opacity="0.67"><animate attributeName="opacity" values="0.67;0.08;0.67" dur="6.1s" begin="3.3s" repeatCount="indefinite"/></circle><circle cx="14.7" cy="220.6" r="0.70" fill="#FFFFFF" opacity="0.36"/><circle cx="535.0" cy="39.2" r="0.44" fill="#FFFFFF" opacity="0.31"/><circle cx="947.2" cy="633.9" r="1.04" fill="#FFFFFF" opacity="0.48"/><circle cx="18.9" cy="436.7" r="1.33" fill="#FFFFFF" opacity="0.17"/><circle cx="16.6" cy="534.3" r="0.96" fill="#FFFFFF" opacity="0.71"><animate attributeName="opacity" values="0.71;0.08;0.71" dur="2.8s" begin="4.9s" repeatCount="indefinite"/></circle><circle cx="13.2" cy="507.0" r="0.60" fill="#FFFFFF" opacity="0.36"/><circle cx="154.2" cy="47.9" r="0.37" fill="#FFFFFF" opacity="0.34"><animate attributeName="opacity" values="0.34;0.04;0.34" dur="3.8s" begin="1.0s" repeatCount="indefinite"/></circle><circle cx="754.8" cy="4.9" r="1.29" fill="#FFFFFF" opacity="0.16"><animate attributeName="opacity" values="0.16;0.02;0.16" dur="2.3s" begin="1.0s" repeatCount="indefinite"/></circle><circle cx="695.6" cy="47.0" r="0.31" fill="#FFFFFF" opacity="0.51"/><circle cx="978.5" cy="780.9" r="0.91" fill="#FFFFFF" opacity="0.15"/><circle cx="934.4" cy="635.0" r="0.44" fill="#FFFFFF" opacity="0.31"/><circle cx="954.9" cy="402.8" r="0.39" fill="#FFFFFF" opacity="0.52"/><circle cx="956.8" cy="679.2" r="0.69" fill="#FFFFFF" opacity="0.24"><animate attributeName="opacity" values="0.24;0.03;0.24" dur="4.8s" begin="3.4s" repeatCount="indefinite"/></circle><circle cx="19.6" cy="101.5" r="0.63" fill="#FFFFFF" opacity="0.34"><animate attributeName="opacity" values="0.34;0.04;0.34" dur="2.9s" begin="1.2s" repeatCount="indefinite"/></circle><circle cx="150.0" cy="819.2" r="0.35" fill="#FFFFFF" opacity="0.38"/><circle cx="367.3" cy="17.1" r="0.78" fill="#FFFFFF" opacity="0.55"/><circle cx="245.3" cy="820.9" r="0.71" fill="#FFFFFF" opacity="0.49"/><circle cx="329.3" cy="27.8" r="0.76" fill="#FFFFFF" opacity="0.20"/><circle cx="958.1" cy="570.5" r="0.61" fill="#FFFFFF" opacity="0.21"><animate attributeName="opacity" values="0.21;0.02;0.21" dur="2.8s" begin="2.9s" repeatCount="indefinite"/></circle><circle cx="9.7" cy="28.1" r="1.26" fill="#FFFFFF" opacity="0.36"><animate attributeName="opacity" values="0.36;0.04;0.36" dur="2.8s" begin="4.0s" repeatCount="indefinite"/></circle><circle cx="960.8" cy="651.2" r="0.49" fill="#FFFFFF" opacity="0.18"/><circle cx="968.9" cy="374.2" r="1.00" fill="#FFFFFF" opacity="0.43"/><circle cx="937.4" cy="739.7" r="1.16" fill="#FFFFFF" opacity="0.64"/><circle cx="838.5" cy="6.2" r="0.38" fill="#FFFFFF" opacity="0.10"/><circle cx="9.5" cy="568.7" r="1.30" fill="#FFFFFF" opacity="0.44"><animate attributeName="opacity" values="0.44;0.05;0.44" dur="2.6s" begin="3.5s" repeatCount="indefinite"/></circle><circle cx="596.5" cy="810.0" r="1.09" fill="#FFFFFF" opacity="0.15"><animate attributeName="opacity" values="0.15;0.02;0.15" dur="5.1s" begin="3.5s" repeatCount="indefinite"/></circle><circle cx="439.2" cy="821.7" r="0.71" fill="#FFFFFF" opacity="0.11"/><circle cx="593.6" cy="58.0" r="1.09" fill="#FFFFFF" opacity="0.14"><animate attributeName="opacity" values="0.14;0.02;0.14" dur="2.4s" begin="2.2s" repeatCount="indefinite"/></circle><circle cx="956.6" cy="639.7" r="1.02" fill="#FFFFFF" opacity="0.38"/><circle cx="922.4" cy="496.7" r="0.68" fill="#FFFFFF" opacity="0.42"/><circle cx="276.0" cy="43.3" r="1.12" fill="#FFFFFF" opacity="0.59"/><circle cx="970.7" cy="52.1" r="0.78" fill="#FFFFFF" opacity="0.27"/><circle cx="581.1" cy="821.2" r="0.97" fill="#FFFFFF" opacity="0.59"/><circle cx="479.3" cy="4.7" r="0.79" fill="#FFFFFF" opacity="0.60"/><circle cx="947.5" cy="324.5" r="1.15" fill="#FFFFFF" opacity="0.40"/><circle cx="989.0" cy="483.1" r="0.45" fill="#FFFFFF" opacity="0.17"/><circle cx="944.9" cy="783.0" r="1.37" fill="#FFFFFF" opacity="0.41"><animate attributeName="opacity" values="0.41;0.05;0.41" dur="3.6s" begin="3.4s" repeatCount="indefinite"/></circle><circle cx="988.1" cy="168.0" r="0.65" fill="#FFFFFF" opacity="0.33"><animate attributeName="opacity" values="0.33;0.04;0.33" dur="4.9s" begin="2.3s" repeatCount="indefinite"/></circle><circle cx="791.8" cy="41.7" r="0.53" fill="#FFFFFF" opacity="0.36"><animate attributeName="opacity" values="0.36;0.04;0.36" dur="3.6s" begin="0.3s" repeatCount="indefinite"/></circle><circle cx="273.2" cy="24.5" r="1.14" fill="#FFFFFF" opacity="0.65"><animate attributeName="opacity" values="0.65;0.08;0.65" dur="3.8s" begin="4.1s" repeatCount="indefinite"/></circle><circle cx="980.1" cy="606.1" r="0.66" fill="#FFFFFF" opacity="0.15"/><circle cx="863.3" cy="819.4" r="0.91" fill="#FFFFFF" opacity="0.67"/><circle cx="983.9" cy="658.7" r="1.04" fill="#FFFFFF" opacity="0.14"><animate attributeName="opacity" values="0.14;0.02;0.14" dur="6.1s" begin="5.0s" repeatCount="indefinite"/></circle><circle cx="615.3" cy="39.6" r="0.67" fill="#FFFFFF" opacity="0.29"><animate attributeName="opacity" values="0.29;0.04;0.29" dur="4.9s" begin="2.2s" repeatCount="indefinite"/></circle><circle cx="199.2" cy="35.4" r="1.05" fill="#FFFFFF" opacity="0.32"/><circle cx="941.5" cy="267.7" r="0.42" fill="#FFFFFF" opacity="0.14"><animate attributeName="opacity" values="0.14;0.02;0.14" dur="4.7s" begin="1.4s" repeatCount="indefinite"/></circle><circle cx="930.9" cy="368.2" r="1.07" fill="#FFFFFF" opacity="0.65"><animate attributeName="opacity" values="0.65;0.08;0.65" dur="4.7s" begin="1.6s" repeatCount="indefinite"/></circle><circle cx="953.7" cy="15.4" r="0.95" fill="#FFFFFF" opacity="0.66"><animate attributeName="opacity" values="0.66;0.08;0.66" dur="4.6s" begin="4.5s" repeatCount="indefinite"/></circle><circle cx="934.3" cy="316.8" r="1.25" fill="#FFFFFF" opacity="0.39"/><circle cx="281.1" cy="19.8" r="1.31" fill="#FFFFFF" opacity="0.60"/><circle cx="961.6" cy="215.8" r="0.74" fill="#FFFFFF" opacity="0.19"/><circle cx="952.4" cy="165.7" r="0.37" fill="#FFFFFF" opacity="0.23"/><circle cx="946.8" cy="817.0" r="1.18" fill="#FFFFFF" opacity="0.46"><animate attributeName="opacity" values="0.46;0.05;0.46" dur="6.2s" begin="1.6s" repeatCount="indefinite"/></circle><circle cx="336.9" cy="46.9" r="1.29" fill="#FFFFFF" opacity="0.47"/><circle cx="355.2" cy="822.2" r="0.41" fill="#FFFFFF" opacity="0.13"/><circle cx="933.7" cy="635.6" r="1.10" fill="#FFFFFF" opacity="0.33"/><circle cx="615.8" cy="819.8" r="0.47" fill="#FFFFFF" opacity="0.48"/><circle cx="935.1" cy="282.7" r="0.93" fill="#FFFFFF" opacity="0.29"/><circle cx="682.3" cy="18.1" r="1.16" fill="#FFFFFF" opacity="0.61"/><circle cx="936.7" cy="827.9" r="0.52" fill="#FFFFFF" opacity="0.10"><animate attributeName="opacity" values="0.10;0.01;0.10" dur="4.2s" begin="3.4s" repeatCount="indefinite"/></circle><circle cx="15.7" cy="378.3" r="0.64" fill="#FFFFFF" opacity="0.40"/><circle cx="12.4" cy="9.0" r="1.19" fill="#FFFFFF" opacity="0.16"/><circle cx="158.0" cy="6.3" r="0.44" fill="#FFFFFF" opacity="0.38"><animate attributeName="opacity" values="0.38;0.05;0.38" dur="4.7s" begin="0.3s" repeatCount="indefinite"/></circle><circle cx="699.5" cy="812.9" r="0.66" fill="#FFFFFF" opacity="0.11"/><circle cx="752.5" cy="819.7" r="0.78" fill="#FFFFFF" opacity="0.54"/><circle cx="861.5" cy="25.3" r="0.89" fill="#FFFFFF" opacity="0.29"/><circle cx="145.7" cy="11.9" r="0.96" fill="#FFFFFF" opacity="0.47"/><circle cx="995.2" cy="139.9" r="1.02" fill="#FFFFFF" opacity="0.72"><animate attributeName="opacity" values="0.72;0.09;0.72" dur="5.7s" begin="4.2s" repeatCount="indefinite"/></circle><circle cx="111.4" cy="61.8" r="0.72" fill="#FFFFFF" opacity="0.13"/><circle cx="91.2" cy="39.7" r="0.58" fill="#FFFFFF" opacity="0.51"/><circle cx="654.8" cy="19.7" r="0.97" fill="#FFFFFF" opacity="0.69"/><circle cx="118.1" cy="818.4" r="0.70" fill="#FFFFFF" opacity="0.22"/><circle cx="952.0" cy="85.9" r="0.42" fill="#FFFFFF" opacity="0.54"/><circle cx="22.1" cy="56.5" r="1.33" fill="#FFFFFF" opacity="0.76"><animate attributeName="opacity" values="0.76;0.09;0.76" dur="3.3s" begin="1.6s" repeatCount="indefinite"/></circle><circle cx="973.7" cy="76.4" r="0.73" fill="#FFFFFF" opacity="0.26"/><circle cx="732.3" cy="56.0" r="0.35" fill="#FFFFFF" opacity="0.51"><animate attributeName="opacity" values="0.51;0.06;0.51" dur="4.5s" begin="3.1s" repeatCount="indefinite"/></circle><circle cx="980.9" cy="598.7" r="0.71" fill="#FFFFFF" opacity="0.14"/><circle cx="867.2" cy="819.2" r="0.47" fill="#FFFFFF" opacity="0.20"><animate attributeName="opacity" values="0.20;0.02;0.20" dur="2.4s" begin="3.4s" repeatCount="indefinite"/></circle><circle cx="8.4" cy="485.5" r="0.34" fill="#FFFFFF" opacity="0.23"/><circle cx="777.5" cy="43.9" r="0.90" fill="#FFFFFF" opacity="0.52"/><circle cx="885.6" cy="814.5" r="0.96" fill="#FFFFFF" opacity="0.61"/><circle cx="46.2" cy="817.9" r="0.37" fill="#FFFFFF" opacity="0.38"/><circle cx="303.8" cy="19.9" r="1.01" fill="#FFFFFF" opacity="0.30"/><circle cx="238.9" cy="820.0" r="1.26" fill="#FFFFFF" opacity="0.42"><animate attributeName="opacity" values="0.42;0.05;0.42" dur="6.0s" begin="0.5s" repeatCount="indefinite"/></circle><circle cx="11.3" cy="410.0" r="0.72" fill="#FFFFFF" opacity="0.48"/><circle cx="982.0" cy="785.9" r="1.01" fill="#FFFFFF" opacity="0.48"/><circle cx="931.6" cy="532.9" r="0.92" fill="#FFFFFF" opacity="0.64"/><circle cx="43.4" cy="813.8" r="0.69" fill="#FFFFFF" opacity="0.42"/><circle cx="606.0" cy="818.4" r="0.54" fill="#FFFFFF" opacity="0.19"><animate attributeName="opacity" values="0.19;0.02;0.19" dur="3.9s" begin="2.5s" repeatCount="indefinite"/></circle><circle cx="936.5" cy="173.5" r="1.11" fill="#FFFFFF" opacity="0.44"><animate attributeName="opacity" values="0.44;0.05;0.44" dur="4.6s" begin="3.9s" repeatCount="indefinite"/></circle><circle cx="810.8" cy="50.8" r="0.52" fill="#FFFFFF" opacity="0.11"/><circle cx="403.1" cy="822.8" r="0.85" fill="#FFFFFF" opacity="0.57"><animate attributeName="opacity" values="0.57;0.07;0.57" dur="4.6s" begin="0.2s" repeatCount="indefinite"/></circle><circle cx="993.2" cy="304.6" r="0.90" fill="#FFFFFF" opacity="0.29"/><circle cx="923.4" cy="763.9" r="0.37" fill="#FFFFFF" opacity="0.33"/><circle cx="955.4" cy="653.5" r="1.36" fill="#FFFFFF" opacity="0.32"/><circle cx="722.4" cy="54.5" r="0.83" fill="#FFFFFF" opacity="0.62"/></g>
+  <text x="28" y="34" font-size="12.5" fill="#6B6B6B">akshat@jamshedpur:~$</text>
+  <text x="186" y="34" font-size="12.5" fill="#FFFFFF">akshat/work --dossier --verbose</text>
+  <line x1="28" y1="48" x2="972" y2="48" stroke="#1C1C1C" stroke-width="1"/>
+  <rect x="28" y="47" width="58" height="1.5" fill="#FFFFFF" opacity="0.8">
+    <animate attributeName="x" values="28;914;28" dur="11s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.85;0.1" dur="11s" repeatCount="indefinite"/>
+  </rect>
+  <g class="slide" style="animation-delay:0.20s">
+    <text x="28" y="84" font-size="11" fill="#3C3C3C">01</text>
+    <text x="58" y="84" font-size="14" font-weight="bold" fill="#FFFFFF">GridSphere</text>
+    <text x="156" y="84" font-size="11.5"
+          fill="#6B6B6B">Smart AI Microgrid</text>
+    <text x="972" y="84" text-anchor="end" font-size="10.5"
+          fill="#6B6B6B">2025–26</text>
+    <text x="58" y="103" font-size="11.5" fill="#A6A6A6">AI-enabled microgrid for regulation, fault and surge prevention, energy distribution and</text>
+    <text x="58" y="120" font-size="11.5" fill="#A6A6A6">peer-to-peer energy trading.</text>
+    <rect x="58" y="130" width="5" height="5" fill="#FFFFFF"/><text x="72" y="138" font-size="11" fill="#FFFFFF">Top 5, NIT Jamshedpur · incubated at CIIC</text>
+  </g>
+  <line x1="28" y1="151" x2="972" y2="151" stroke="#3C3C3C" stroke-width="1" opacity="0.6"/>
+  <g class="slide" style="animation-delay:0.32s">
+    <text x="28" y="168" font-size="11" fill="#3C3C3C">02</text>
+    <text x="58" y="168" font-size="14" font-weight="bold" fill="#FFFFFF">CarbonRoute</text>
+    <text x="164" y="168" font-size="11.5"
+          fill="#6B6B6B">Logistics Intelligence</text>
+    <text x="972" y="168" text-anchor="end" font-size="10.5"
+          fill="#6B6B6B">2026</text>
+    <text x="58" y="187" font-size="11.5" fill="#A6A6A6">Network-level transport optimisation across fleets, orders and depots over time, cost,</text>
+    <text x="58" y="204" font-size="11.5" fill="#A6A6A6">emissions, distance and reliability — Pareto optimisation, digital-twin disruption testing.</text>
+  </g>
+  <line x1="28" y1="217" x2="972" y2="217" stroke="#3C3C3C" stroke-width="1" opacity="0.6"/>
+  <g class="slide" style="animation-delay:0.44s">
+    <text x="28" y="234" font-size="11" fill="#3C3C3C">03</text>
+    <text x="58" y="234" font-size="14" font-weight="bold" fill="#FFFFFF">PCB Inspector</text>
+    <text x="181" y="234" font-size="11.5"
+          fill="#6B6B6B">Industrial Vision</text>
+    <text x="972" y="234" text-anchor="end" font-size="10.5"
+          fill="#6B6B6B">2026</text>
+    <text x="58" y="253" font-size="11.5" fill="#A6A6A6">OpenCV and HD camera inspection: configurable grid scanning, calibrated measurement and</text>
+    <text x="58" y="270" font-size="11.5" fill="#A6A6A6">component coordinates streamed live to robotic systems.</text>
+    <rect x="58" y="280" width="5" height="5" fill="#FFFFFF"/><text x="72" y="288" font-size="11" fill="#FFFFFF">In collaboration with IIT Kharagpur</text>
+  </g>
+  <line x1="28" y1="301" x2="972" y2="301" stroke="#3C3C3C" stroke-width="1" opacity="0.6"/>
+  <g class="slide" style="animation-delay:0.56s">
+    <text x="28" y="318" font-size="11" fill="#3C3C3C">04</text>
+    <text x="58" y="318" font-size="14" font-weight="bold" fill="#FFFFFF">Aegis Edge</text>
+    <text x="156" y="318" font-size="11.5"
+          fill="#6B6B6B">Offline-First Edge AI</text>
+    <text x="972" y="318" text-anchor="end" font-size="10.5"
+          fill="#6B6B6B">2026</text>
+    <text x="58" y="337" font-size="11.5" fill="#A6A6A6">Local inference with durable memory, peer reconciliation, policy-controlled data movement</text>
+    <text x="58" y="354" font-size="11.5" fill="#A6A6A6">and autonomous degradation and recovery.</text>
+  </g>
+  <line x1="28" y1="367" x2="972" y2="367" stroke="#3C3C3C" stroke-width="1" opacity="0.6"/>
+  <g class="slide" style="animation-delay:0.68s">
+    <text x="28" y="384" font-size="11" fill="#3C3C3C">05</text>
+    <text x="58" y="384" font-size="14" font-weight="bold" fill="#FFFFFF">Fraud Detection</text>
+    <text x="198" y="384" font-size="11.5"
+          fill="#6B6B6B">E-Commerce Risk</text>
+    <text x="972" y="384" text-anchor="end" font-size="10.5"
+          fill="#6B6B6B">2025–26</text>
+    <text x="58" y="403" font-size="11.5" fill="#A6A6A6">Treats fraudulent product returns as a risk-analysis problem, surfacing suspicious</text>
+    <text x="58" y="420" font-size="11.5" fill="#A6A6A6">behaviour and transaction patterns.</text>
+    <rect x="58" y="430" width="5" height="5" fill="#FFFFFF"/><text x="72" y="438" font-size="11" fill="#FFFFFF">First Position, Amazon AWS</text>
+  </g>
+  <line x1="28" y1="451" x2="972" y2="451" stroke="#3C3C3C" stroke-width="1" opacity="0.6"/>
+  <g class="slide" style="animation-delay:0.80s">
+    <text x="28" y="468" font-size="11" fill="#3C3C3C">06</text>
+    <text x="58" y="468" font-size="14" font-weight="bold" fill="#FFFFFF">TS-GLDC</text>
+    <text x="131" y="468" font-size="11.5"
+          fill="#6B6B6B">LPG Leak Detection</text>
+    <text x="972" y="468" text-anchor="end" font-size="10.5"
+          fill="#6B6B6B">2026</text>
+    <text x="58" y="487" font-size="11.5" fill="#A6A6A6">Low-cost passive safety tape that detects gas leakage without batteries or electronic</text>
+    <text x="58" y="504" font-size="11.5" fill="#A6A6A6">sensors.</text>
+    <rect x="58" y="514" width="5" height="5" fill="#FFFFFF"/><text x="72" y="522" font-size="11" fill="#FFFFFF">INSPIRE MANAK, DST &amp; NIF India · Emergent Ventures grant</text>
+  </g>
+  <line x1="28" y1="535" x2="972" y2="535" stroke="#3C3C3C" stroke-width="1" opacity="0.6"/>
+  <g class="slide" style="animation-delay:0.92s">
+    <text x="28" y="552" font-size="11" fill="#3C3C3C">07</text>
+    <text x="58" y="552" font-size="14" font-weight="bold" fill="#FFFFFF">Kinexa</text>
+    <text x="122" y="552" font-size="11.5"
+          fill="#6B6B6B">Assistive Technology</text>
+    <text x="972" y="552" text-anchor="end" font-size="10.5"
+          fill="#6B6B6B">2026</text>
+    <text x="58" y="571" font-size="11.5" fill="#A6A6A6">A communication bridge for deaf athletes.</text>
+    <rect x="58" y="581" width="5" height="5" fill="#FFFFFF"/><text x="72" y="589" font-size="11" fill="#FFFFFF">Top 40, Samsung Solve for Tomorrow India 2026</text>
+  </g>
+  <line x1="28" y1="602" x2="972" y2="602" stroke="#3C3C3C" stroke-width="1" opacity="0.6"/>
+  <g class="slide" style="animation-delay:1.04s">
+    <text x="28" y="619" font-size="11" fill="#3C3C3C">08</text>
+    <text x="58" y="619" font-size="14" font-weight="bold" fill="#FFFFFF">Waste Management</text>
+    <text x="206" y="619" font-size="11.5"
+          fill="#6B6B6B">Environmental Software</text>
+    <text x="972" y="619" text-anchor="end" font-size="10.5"
+          fill="#6B6B6B">2025</text>
+    <text x="58" y="638" font-size="11.5" fill="#A6A6A6">Software for waste segregation across categories.</text>
+    <rect x="58" y="648" width="5" height="5" fill="#FFFFFF"/><text x="72" y="656" font-size="11" fill="#FFFFFF">Runner-up, Design Championship 2025 (ICT 360)</text>
+  </g>
+  <line x1="28" y1="669" x2="972" y2="669" stroke="#3C3C3C" stroke-width="1" opacity="0.6"/>
+  <g class="slide" style="animation-delay:1.16s">
+    <text x="28" y="686" font-size="11" fill="#3C3C3C">09</text>
+    <text x="58" y="686" font-size="14" font-weight="bold" fill="#FFFFFF">Cyberbullying Detection</text>
+    <text x="265" y="686" font-size="11.5"
+          fill="#6B6B6B">Applied ML</text>
+    <text x="972" y="686" text-anchor="end" font-size="10.5"
+          fill="#6B6B6B">2025</text>
+    <text x="58" y="705" font-size="11.5" fill="#A6A6A6">Web and ML early-warning layer for identifying potentially harmful online interactions.</text>
+    <rect x="58" y="715" width="5" height="5" fill="#FFFFFF"/><text x="72" y="723" font-size="11" fill="#FFFFFF">Runner-up, SparkX, IIT Bombay Techfest 2025</text>
+  </g>
+  <line x1="28" y1="736" x2="972" y2="736" stroke="#3C3C3C" stroke-width="1" opacity="0.6"/>
+  <g class="slide" style="animation-delay:1.28s">
+    <text x="28" y="753" font-size="11" fill="#3C3C3C">10</text>
+    <text x="58" y="753" font-size="14" font-weight="bold" fill="#FFFFFF">Blix Bot</text>
+    <text x="139" y="753" font-size="11.5"
+          fill="#6B6B6B">Mobile Robotics</text>
+    <text x="972" y="753" text-anchor="end" font-size="10.5"
+          fill="#6B6B6B">2024</text>
+    <text x="58" y="772" font-size="11.5" fill="#A6A6A6">Mobile football-playing robot.</text>
+    <rect x="58" y="782" width="5" height="5" fill="#FFFFFF"/><text x="72" y="790" font-size="11" fill="#FFFFFF">Runner-up, Best Innovation, Blixathon, IIT Bombay Techfest 2024</text>
+  </g>
+  <defs>
+    <linearGradient id="ds-sw" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+      <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect y="0" width="260" height="834" fill="url(#ds-sw)" x="-260">
+    <animate attributeName="x" values="-260;1000;1000"
+             keyTimes="0;0.118;1" dur="22s" begin="3.0s"
+             repeatCount="indefinite"/>
+  </rect>
+  <rect y="0" width="1.5" height="834" fill="#FFFFFF" opacity="0" x="-260">
+    <animate attributeName="x" values="0;1000;1000" keyTimes="0;0.118;1"
+             dur="22s" begin="3.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;.5;0;0" keyTimes="0;0.059;0.118;1"
+             dur="22s" begin="3.0s" repeatCount="indefinite"/>
+  </rect>
+
+</svg>

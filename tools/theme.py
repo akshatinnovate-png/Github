@@ -104,6 +104,36 @@ def prompt(w, label, y=34, user="akshat@jamshedpur"):
   </rect>"""
 
 
+def sweep(uid, w, h, cycle=16.0, phase=0.0, band=260, peak=0.10):
+    """A band of light that crosses the panel, then waits out the rest of the
+    cycle off-screen. Content underneath stays fully visible the whole time -
+    the sweep lights it, it never gates it."""
+    cross = min(0.22, 2.6 / cycle)
+    return f"""  <defs>
+    <linearGradient id="{uid}-sw" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="{INK}" stop-opacity="0"/>
+      <stop offset="45%" stop-color="{INK}" stop-opacity="{peak}"/>
+      <stop offset="55%" stop-color="{INK}" stop-opacity="{peak}"/>
+      <stop offset="100%" stop-color="{INK}" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect y="0" width="{band}" height="{h}" fill="url(#{uid}-sw)" x="{-band}">
+    <animate attributeName="x" values="{-band};{w};{w}"
+             keyTimes="0;{cross:.3f};1" dur="{cycle}s" begin="{phase}s"
+             repeatCount="indefinite"/>
+  </rect>
+  <rect y="0" width="1.5" height="{h}" fill="{INK}" opacity="0" x="{-band}">
+    <animate attributeName="x" values="0;{w};{w}" keyTimes="0;{cross:.3f};1"
+             dur="{cycle}s" begin="{phase}s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;.5;0;0" keyTimes="0;{cross/2:.3f};{cross:.3f};1"
+             dur="{cycle}s" begin="{phase}s" repeatCount="indefinite"/>
+  </rect>"""
+
+
+def a11y(title, desc):
+    return f"  <title>{title}</title>\n  <desc>{desc}</desc>"
+
+
 def cursor(x, y, w=9, h=15, begin="0s"):
     return (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{INK}">'
             f'<animate attributeName="opacity" values="1;1;0;0" dur="1.1s" '
@@ -132,7 +162,10 @@ def base_css(extra=""):
 {extra}  </style>"""
 
 
-def svg(w, h, body, css=""):
+def svg(w, h, body, css="", sw=None):
+    """`sw=(uid, cycle, phase)` lays the light sweep over the finished panel."""
+    if sw:
+        body += "\n" + sweep(sw[0], w, h, cycle=sw[1], phase=sw[2])
     return (f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" '
             f'xmlns="http://www.w3.org/2000/svg" role="img">\n{css}\n{body}\n</svg>\n')
 

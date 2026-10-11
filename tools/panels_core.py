@@ -48,7 +48,7 @@ def boot(_root):
   <text x="{W - 28}" y="{h - 18}" text-anchor="end" font-size="9" fill="{INK_FAINT}"
         letter-spacing="1.4">10 UNITS · 9 ACTIVE · 1 DEGRADED</text>
 """
-    return svg(W, h, body, base_css())
+    return svg(W, h, body, base_css(), sw=("b", 18, 1.6))
 
 
 # -------------------------------------------------------------- work tree --
@@ -130,7 +130,7 @@ def tree(_root):
 {chr(10).join(out)}
   <text x="28" y="{h - 18}" font-size="9.5" fill="{INK_FAINT}">7 directories, 10 projects, 2024–2026</text>
 """
-    return svg(W, h, body, base_css())
+    return svg(W, h, body, base_css(), sw=("w", 20, 2.5))
 
 
 # -------------------------------------------------------------- timeline --
@@ -185,7 +185,7 @@ def experience(_root):
 {rail}
 {chr(10).join(out)}
 """
-    return svg(W, h, body, base_css())
+    return svg(W, h, body, base_css(), sw=("e", 19, 2.0))
 
 
 # --------------------------------------------------------------- honours --
@@ -226,4 +226,4 @@ def awards(_root):
 {banner}
 {chr(10).join(out)}
 """
-    return svg(W, h, body, base_css())
+    return svg(W, h, body, base_css(), sw=("a", 21, 4.5))

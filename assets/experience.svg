@@ -62,4 +62,23 @@
     <text x="72" y="438" font-size="11.5" fill="#6B6B6B">Custom CNN for pixel-level SMD, MCU &amp; PCB trace defect detection</text>
   </g>
 
+  <defs>
+    <linearGradient id="e-sw" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+      <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect y="0" width="260" height="460" fill="url(#e-sw)" x="-260">
+    <animate attributeName="x" values="-260;1000;1000"
+             keyTimes="0;0.137;1" dur="19s" begin="2.0s"
+             repeatCount="indefinite"/>
+  </rect>
+  <rect y="0" width="1.5" height="460" fill="#FFFFFF" opacity="0" x="-260">
+    <animate attributeName="x" values="0;1000;1000" keyTimes="0;0.137;1"
+             dur="19s" begin="2.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;.5;0;0" keyTimes="0;0.068;0.137;1"
+             dur="19s" begin="2.0s" repeatCount="indefinite"/>
+  </rect>
 </svg>

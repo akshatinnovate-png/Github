@@ -120,4 +120,4 @@ def build(root):
   <text x="{W - 28}" y="452" text-anchor="end" font-size="8.5" fill="{INK_FAINT}"
         letter-spacing="2">AS.OS &#183; v0.26</text>
 """
-    return svg(W, H, body, css)
+    return svg(W, H, body, css, sw=("h", 15, 2.2))
